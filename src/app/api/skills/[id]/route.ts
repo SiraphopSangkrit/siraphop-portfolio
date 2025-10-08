@@ -5,12 +5,13 @@ import Skill from '@/lib/models/Skill';
 
 export async function GET(
   request: NextRequest,
-  { params }: { params: { id: string } }
+  { params }: { params: Promise<{ id: string }> }
 ) {
   try {
     await connectDB();
     
-    const skill = await Skill.findById(params.id);
+    const { id } = await params;
+    const skill = await Skill.findById(id);
     
     if (!skill) {
       return NextResponse.json(
@@ -34,15 +35,16 @@ export async function GET(
 
 export async function PUT(
   request: NextRequest,
-  { params }: { params: { id: string } }
+  { params }: { params: Promise<{ id: string }> }
 ) {
   try {
     await connectDB();
     
+    const { id } = await params;
     const updateData = await request.json();
     
     const skill = await Skill.findByIdAndUpdate(
-      params.id,
+      id,
       updateData,
       { new: true, runValidators: true }
     );
@@ -69,12 +71,13 @@ export async function PUT(
 
 export async function DELETE(
   request: NextRequest,
-  { params }: { params: { id: string } }
+  { params }: { params: Promise<{ id: string }> }
 ) {
   try {
     await connectDB();
     
-    const skill = await Skill.findByIdAndDelete(params.id);
+    const { id } = await params;
+    const skill = await Skill.findByIdAndDelete(id);
     
     if (!skill) {
       return NextResponse.json(

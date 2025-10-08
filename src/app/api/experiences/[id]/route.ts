@@ -5,12 +5,13 @@ import Experience from '@/lib/models/Experience';
 
 export async function GET(
   request: NextRequest,
-  { params }: { params: { id: string } }
+  { params }: { params: Promise<{ id: string }> }
 ) {
   try {
     await connectDB();
     
-    const experience = await Experience.findById(params.id);
+    const { id } = await params;
+    const experience = await Experience.findById(id);
     
     if (!experience) {
       return NextResponse.json(
@@ -34,15 +35,16 @@ export async function GET(
 
 export async function PUT(
   request: NextRequest,
-  { params }: { params: { id: string } }
+  { params }: { params: Promise<{ id: string }> }
 ) {
   try {
     await connectDB();
     
+    const { id } = await params;
     const updateData = await request.json();
     
     const experience = await Experience.findByIdAndUpdate(
-      params.id,
+      id,
       updateData,
       { new: true, runValidators: true }
     );
@@ -69,12 +71,13 @@ export async function PUT(
 
 export async function DELETE(
   request: NextRequest,
-  { params }: { params: { id: string } }
+  { params }: { params: Promise<{ id: string }> }
 ) {
   try {
     await connectDB();
     
-    const experience = await Experience.findByIdAndDelete(params.id);
+    const { id } = await params;
+    const experience = await Experience.findByIdAndDelete(id);
     
     if (!experience) {
       return NextResponse.json(
