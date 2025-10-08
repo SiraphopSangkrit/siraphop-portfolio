@@ -1061,26 +1061,9 @@ function ExperiencesManager({
                   {experience.description}
                 </p>
                 
-                {experience.achievements && experience.achievements.length > 0 && (
-                  <div className="mb-3">
-                    <h4 className="text-sm font-semibold text-gray-900 dark:text-white mb-1">
-                      Achievements:
-                    </h4>
-                    <ul className="list-disc list-inside text-sm text-gray-600 dark:text-gray-300 space-y-1">
-                      {experience.achievements.map((achievement, index) => (
-                        <li key={index}>{achievement}</li>
-                      ))}
-                    </ul>
-                  </div>
-                )}
+              
                 
-                <div className="flex flex-wrap gap-1">
-                  {experience.technologies.map((tech, index) => (
-                    <span key={index} className="px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-xs rounded">
-                      {tech}
-                    </span>
-                  ))}
-                </div>
+                
               </div>
               
               <div className="flex gap-2 ml-4">
