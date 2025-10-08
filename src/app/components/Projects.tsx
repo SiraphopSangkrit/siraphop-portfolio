@@ -99,7 +99,7 @@ export default function Projects() {
             Featured Projects
           </h2>
           <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-            Here are some of the projects I've worked on recently.
+            Here are some of the projects I &apos; ve worked on recently.
           </p>
         </div>
 

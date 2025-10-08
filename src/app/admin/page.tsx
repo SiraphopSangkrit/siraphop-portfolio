@@ -479,7 +479,7 @@ function ContentEditor({
       {hasChanges && (
         <div className="mt-4 p-3 bg-yellow-50 dark:bg-yellow-900/20 border border-yellow-200 dark:border-yellow-800 rounded-lg">
           <p className="text-sm text-yellow-800 dark:text-yellow-200">
-            You have unsaved changes. Click "Save Changes" to update the content.
+            You have unsaved changes. Click &quot;Save Changes&quot; to update the content.
           </p>
         </div>
       )}
@@ -1109,7 +1109,7 @@ function ExperiencesManager({
         {experiences.length === 0 && (
           <div className="text-center py-8">
             <p className="text-gray-500 dark:text-gray-400">
-              No experiences added yet. Click "Add Experience" to get started.
+              No experiences added yet.&quot;Click Add Experience&quot; to get started.
             </p>
           </div>
         )}
@@ -1137,15 +1137,7 @@ function ExperienceForm({
     onSave(formData);
   };
 
-  const handleTechnologiesChange = (value: string) => {
-    const techArray = value.split(',').map(tech => tech.trim()).filter(Boolean);
-    setFormData({ ...formData, technologies: techArray });
-  };
 
-  const handleAchievementsChange = (value: string) => {
-    const achievementsArray = value.split('\n').map(achievement => achievement.trim()).filter(Boolean);
-    setFormData({ ...formData, achievements: achievementsArray });
-  };
 
   return (
     <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow">

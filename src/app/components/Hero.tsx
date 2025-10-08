@@ -79,7 +79,7 @@ export default function Hero() {
           </div>
         </div>
         <h1 className="text-4xl md:text-6xl font-bold text-gray-900 dark:text-white mb-6">
-          Hi, I'm <span className="text-blue-600 dark:text-blue-400">{content.name || 'Siraphop Sangkrit'}</span>
+          Hi, I&apos;m <span className="text-blue-600 dark:text-blue-400">{content.name || 'Siraphop Sangkrit'}</span>
         </h1>
         <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-8">
           {content.title || 'Full Stack Developer'}{content.subtitle && ` ${content.subtitle}`}

@@ -60,37 +60,39 @@ const initialProjects = [
 
 const initialSkills = [
   // Frontend Skills
-  { name: 'React', category: 'frontend', level: 9, order: 1 },
-  { name: 'Next.js', category: 'frontend', level: 8, order: 2 },
-  { name: 'Vue.js', category: 'frontend', level: 7, order: 3 },
-  { name: 'TypeScript', category: 'frontend', level: 8, order: 4 },
-  { name: 'JavaScript', category: 'frontend', level: 9, order: 5 },
-  { name: 'HTML5', category: 'frontend', level: 10, order: 6 },
-  { name: 'CSS3', category: 'frontend', level: 9, order: 7 },
-  { name: 'Tailwind CSS', category: 'frontend', level: 8, order: 8 },
-  { name: 'Sass/SCSS', category: 'frontend', level: 7, order: 9 },
+  { name: 'React', category: 'frontend', order: 1 },
+  { name: 'Next.js', category: 'frontend',  order: 2 },
+  { name: 'Vue.js', category: 'frontend', order: 3 },
+  { name: 'TypeScript', category: 'frontend', order: 4 },
+  { name: 'JavaScript', category: 'frontend' ,order: 5 },
+  { name: 'HTML5', category: 'frontend', order: 6 },
+  { name: 'CSS3', category: 'frontend',order: 7 },
+  { name: 'Tailwind CSS', category: 'frontend' ,order: 8 },
+  { name: 'Sass/SCSS', category: 'frontend',order: 9 },
   
   // Backend Skills
-  { name: 'Node.js', category: 'backend', level: 8, order: 1 },
-  { name: 'Express.js', category: 'backend', level: 8, order: 2 },
-  { name: 'PHP', category: 'backend', level: 7, order: 3 },
-  { name: 'Laravel', category: 'backend', level: 6, order: 4 },
-  { name: 'Python', category: 'backend', level: 6, order: 5 },
-  { name: 'MongoDB', category: 'backend', level: 7, order: 6 },
-  { name: 'PostgreSQL', category: 'backend', level: 7, order: 7 },
-  { name: 'MySQL', category: 'backend', level: 8, order: 8 },
-  { name: 'Redis', category: 'backend', level: 6, order: 9 },
+  { name: 'Node.js', category: 'backend', order: 1 },
+  { name: 'Express.js', category: 'backend', order: 2 },
+  { name: 'PHP', category: 'backend', order: 3 },
+  { name: 'Laravel', category: 'backend', order: 4 },
+  { name: 'Python', category: 'backend', order: 5 },
+  { name: 'MongoDB', category: 'backend', order: 6 },
+  { name: 'PostgreSQL', category: 'backend', order: 7 },
+  { name: 'MySQL', category: 'backend', order: 8 },
+  { name: 'Redis', category: 'backend', order: 9 },
   
   // Tools & DevOps
-  { name: 'Git', category: 'tools', level: 9, order: 1 },
-  { name: 'GitHub', category: 'tools', level: 9, order: 2 },
-  { name: 'VS Code', category: 'tools', level: 10, order: 3 },
-  { name: 'Docker', category: 'tools', level: 7, order: 4 },
-  { name: 'AWS', category: 'tools', level: 6, order: 5 },
-  { name: 'Vercel', category: 'tools', level: 8, order: 6 },
-  { name: 'Netlify', category: 'tools', level: 7, order: 7 },
-  { name: 'Figma', category: 'tools', level: 8, order: 8 },
-  { name: 'Postman', category: 'tools', level: 8, order: 9 }
+  { name: 'Git', category: 'tools', order: 1 },
+  { name: 'GitHub', category: 'tools', order: 2 },
+  { name: 'VS Code', category: 'tools',  order: 3 },
+  { name: 'Docker', category: 'tools', order: 4 },
+  { name: 'AWS', category: 'tools', order: 5 },
+  { name: 'Vercel', category: 'tools', order: 6 },
+  { name: 'Netlify', category: 'tools', order: 7 },
+  { name: 'Figma', category: 'tools', order: 8 },
+  { name: 'Postman', category: 'tools', order: 9 },
+  { name: 'Jest', category: 'tools', order: 10 },
+  { name: 'Webpack', category: 'tools', order: 11 }
 ];
 
 const initialExperiences = [
@@ -98,8 +100,7 @@ const initialExperiences = [
     company: 'Tech Solutions Inc.',
     position: 'Senior Full Stack Developer',
     description: 'Led development of scalable web applications using React, Node.js, and PostgreSQL. Mentored junior developers and implemented CI/CD pipelines.',
-    startDate: new Date('2022-06-01'),
-    endDate: null,
+    startDate: '2022-06-01',
     current: true,
     location: 'Bangkok, Thailand',
     technologies: ['React', 'Node.js', 'PostgreSQL', 'Docker', 'AWS'],
@@ -114,8 +115,8 @@ const initialExperiences = [
     company: 'Digital Agency Co.',
     position: 'Full Stack Developer',
     description: 'Developed responsive web applications and e-commerce platforms for various clients. Collaborated with design teams to implement pixel-perfect UIs.',
-    startDate: new Date('2020-03-01'),
-    endDate: new Date('2022-05-31'),
+    startDate: '2020-03-01',
+    endDate: '2022-05-31',
     current: false,
     location: 'Bangkok, Thailand',
     technologies: ['Vue.js', 'Laravel', 'MySQL', 'Git'],
@@ -130,8 +131,8 @@ const initialExperiences = [
     company: 'StartUp Innovations',
     position: 'Junior Developer',
     description: 'Built web applications from concept to deployment. Learned modern development practices and agile methodologies.',
-    startDate: new Date('2019-01-01'),
-    endDate: new Date('2020-02-28'),
+    startDate: '2019-01-01',
+    endDate: '2020-02-28',
     current: false,
     location: 'Bangkok, Thailand',
     technologies: ['JavaScript', 'PHP', 'HTML', 'CSS', 'Bootstrap'],
@@ -141,6 +142,22 @@ const initialExperiences = [
       'Contributed to 10+ features'
     ],
     order: 3
+  },
+  {
+    company: 'Freelance',
+    position: 'Web Developer',
+    description: 'Worked on various freelance projects including small business websites, landing pages, and web applications. Gained experience in client communication and project management.',
+    startDate: '2018-06-01',
+    endDate: '2018-12-31',
+    current: false,
+    location: 'Remote',
+    technologies: ['WordPress', 'JavaScript', 'jQuery', 'PHP', 'MySQL'],
+    achievements: [
+      'Completed 8+ freelance projects',
+      'Maintained 100% client satisfaction rate',
+      'Developed strong client communication skills'
+    ],
+    order: 4
   }
 ];
 
@@ -171,7 +188,12 @@ export async function POST() {
     await Skill.insertMany(initialSkills);
     
     // Seed experiences
-    await Experience.insertMany(initialExperiences);
+    const formattedExperiences = initialExperiences.map(exp => ({
+      ...exp,
+      startDate: new Date(exp.startDate),
+      endDate: exp.endDate ? new Date(exp.endDate) : undefined
+    }));
+    await Experience.insertMany(formattedExperiences);
     
     return NextResponse.json({
       success: true,
@@ -183,7 +205,7 @@ export async function POST() {
         experiencesCount: initialExperiences.length
       }
     });
-  } catch (error) {
+  } catch (error: unknown) {
     console.error('Error seeding database:', error);
     return NextResponse.json(
       { success: false, error: 'Failed to seed database' },

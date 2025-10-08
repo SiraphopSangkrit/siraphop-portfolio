@@ -21,7 +21,12 @@ const SkillSchema: Schema = new Schema({
     enum: ['frontend', 'backend', 'tools'],
     trim: true
   },
-
+  level: {
+    type: Number,
+    required: true,
+    min: 1,
+    max: 10
+  },
   order: {
     type: Number,
     default: 0

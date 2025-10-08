@@ -66,7 +66,7 @@ export default function Contact() {
         <div className="max-w-2xl mx-auto">
           <div>
             <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6 text-center">
-              Let's Connect
+              Let&apos;s Connect
             </h3>
             <p className="text-gray-600 dark:text-gray-300 mb-8 text-center">
               Feel free to reach out if you have any questions or would like to work together.
