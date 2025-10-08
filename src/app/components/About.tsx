@@ -193,29 +193,8 @@ export default function About() {
                         {exp.description}
                       </p>
                       
-                      {exp.achievements && exp.achievements.length > 0 && (
-                        <div className="mb-4">
-                          <h5 className="text-sm font-semibold text-gray-900 dark:text-white mb-2">
-                            Key Achievements:
-                          </h5>
-                          <ul className="list-disc list-inside text-sm text-gray-600 dark:text-gray-300 space-y-1">
-                            {exp.achievements.map((achievement, idx) => (
-                              <li key={idx}>{achievement}</li>
-                            ))}
-                          </ul>
-                        </div>
-                      )}
                       
-                      <div className="flex flex-wrap gap-2">
-                        {exp.technologies.map((tech) => (
-                          <span 
-                            key={tech}
-                            className="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded text-xs"
-                          >
-                            {tech}
-                          </span>
-                        ))}
-                      </div>
+                     
                     </div>
                   </div>
                 </div>
