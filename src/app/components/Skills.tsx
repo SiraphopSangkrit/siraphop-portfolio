@@ -30,12 +30,12 @@ export default function Skills() {
   const fetchSkills = async () => {
     try {
       const response = await fetch('/api/skills');
-      const result = await response.json();
+      const result: { success: boolean; data: SkillsByCategory } = await response.json();
       
       if (result.success) {
         setSkills(result.data);
       }
-    } catch (error) {
+    } catch (error: unknown) {
       console.error('Error fetching skills:', error);
     } finally {
       setLoading(false);
@@ -81,21 +81,7 @@ export default function Skills() {
     }
   };
 
-  const renderSkillLevel = (level: number) => {
-    return (
-      <div className="flex items-center space-x-1 mt-1">
-        {[...Array(10)].map((_, i) => (
-          <div
-            key={i}
-            className={`w-1.5 h-1.5 rounded-full ${
-              i < level ? 'bg-current' : 'bg-gray-300 dark:bg-gray-600'
-            }`}
-          />
-        ))}
-        <span className="text-xs ml-2 opacity-70">({level}/10)</span>
-      </div>
-    );
-  };
+ 
 
   if (loading) {
     return (

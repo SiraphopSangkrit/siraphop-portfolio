@@ -25,12 +25,12 @@ export default function Hero() {
   const fetchHeroContent = async () => {
     try {
       const response = await fetch('/api/content');
-      const result = await response.json();
+      const result: { success: boolean; data: { hero: HeroContent } } = await response.json();
       
       if (result.success && result.data.hero) {
         setContent(result.data.hero);
       }
-    } catch (error) {
+    } catch (error: unknown) {
       console.error('Error fetching hero content:', error);
     } finally {
       setLoading(false);

@@ -26,12 +26,12 @@ export default function Contact() {
   const fetchContactContent = async () => {
     try {
       const response = await fetch('/api/content');
-      const result = await response.json();
+      const result: { success: boolean; data: { contact: ContactContent } } = await response.json();
       
       if (result.success && result.data.contact) {
         setContent(prevContent => ({ ...prevContent, ...result.data.contact }));
       }
-    } catch (error) {
+    } catch (error: unknown) {
       console.error('Error fetching contact content:', error);
     } finally {
       setLoading(false);
@@ -63,12 +63,12 @@ export default function Contact() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-12">
+        <div className="max-w-2xl mx-auto">
           <div>
-            <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">
+            <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6 text-center">
               Let's Connect
             </h3>
-            <p className="text-gray-600 dark:text-gray-300 mb-8">
+            <p className="text-gray-600 dark:text-gray-300 mb-8 text-center">
               Feel free to reach out if you have any questions or would like to work together.
             </p>
             
@@ -130,8 +130,6 @@ export default function Contact() {
               </div>
             </div>
           </div>
-
-        
         </div>
       </div>
     </section>

@@ -1,5 +1,6 @@
 'use client';
 import { useState, useEffect } from 'react';
+import Image from 'next/image';
 
 interface Project {
   _id: string;
@@ -26,14 +27,14 @@ export default function Projects() {
     try {
       setLoading(true);
       const response = await fetch('/api/projects?featured=true');
-      const result = await response.json();
+      const result: { success: boolean; data: Project[] } = await response.json();
       
       if (result.success) {
         setProjects(result.data);
       } else {
         setError('Failed to fetch projects');
       }
-    } catch (err) {
+    } catch (err: unknown) {
       setError('Failed to fetch projects');
       console.error('Error fetching projects:', err);
     } finally {
@@ -116,10 +117,13 @@ export default function Projects() {
               <div key={project._id} className="bg-white dark:bg-gray-700 rounded-lg shadow-lg overflow-hidden">
                 <div className="h-48 bg-gradient-to-br from-blue-400 to-purple-500 flex items-center justify-center">
                   {project.image ? (
-                    <img 
+                    <Image
                       src={project.image} 
                       alt={project.title}
                       className="w-full h-full object-cover"
+                      width={400}
+                      height={400}
+                     
                     />
                   ) : (
                     <div className="text-white text-2xl font-bold">

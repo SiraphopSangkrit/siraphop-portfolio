@@ -52,12 +52,12 @@ export default function About() {
   const fetchAboutContent = async () => {
     try {
       const response = await fetch('/api/content');
-      const result = await response.json();
+      const result: { success: boolean; data: { about: AboutContent } } = await response.json();
       
       if (result.success && result.data.about) {
         setContent(prevContent => ({ ...prevContent, ...result.data.about }));
       }
-    } catch (error) {
+    } catch (error: unknown) {
       console.error('Error fetching about content:', error);
     }
   };
@@ -65,12 +65,12 @@ export default function About() {
   const fetchSkills = async () => {
     try {
       const response = await fetch('/api/skills');
-      const result = await response.json();
+      const result: { success: boolean; data: Record<string, Skill[]> } = await response.json();
       
       if (result.success) {
         // Get top skills from each category for the About section
         const topSkills: string[] = [];
-        Object.values(result.data).forEach((categorySkills: any) => {
+        Object.values(result.data).forEach((categorySkills: Skill[]) => {
           const sortedSkills = categorySkills
             .sort((a: Skill, b: Skill) => b.level - a.level)
             .slice(0, 3); // Top 3 from each category
@@ -82,7 +82,7 @@ export default function About() {
           technologies: topSkills.slice(0, 8) // Limit to 8 total skills
         }));
       }
-    } catch (error) {
+    } catch (error: unknown) {
       console.error('Error fetching skills:', error);
     } finally {
       setLoading(false);
@@ -92,12 +92,12 @@ export default function About() {
   const fetchExperiences = async () => {
     try {
       const response = await fetch('/api/experiences');
-      const result = await response.json();
+      const result: { success: boolean; data: Experience[] } = await response.json();
       
       if (result.success) {
         setExperiences(result.data.slice(0, 3)); // Show only top 3 experiences
       }
-    } catch (error) {
+    } catch (error: unknown) {
       console.error('Error fetching experiences:', error);
     }
   };
