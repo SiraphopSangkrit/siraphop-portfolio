@@ -27,8 +27,7 @@ interface Experience {
   endDate?: string;
   current: boolean;
   location: string;
-  technologies: string[];
-  achievements: string[];
+
   order: number;
 }
 
@@ -37,7 +36,7 @@ export default function About() {
     title: 'About Me',
     subtitle: "I'm a passionate developer with expertise in modern web technologies and a keen eye for design.",
     story: 'With over 3 years of experience in web development, I specialize in creating responsive, user-friendly applications using modern frameworks and technologies.',
-    technologies: [],
+
     facts: ['3+ years of experience', '20+ projects completed', 'Always learning new technologies', 'Open source contributor']
   });
   const [experiences, setExperiences] = useState<Experience[]>([]);
