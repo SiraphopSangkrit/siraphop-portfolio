@@ -131,10 +131,10 @@ export default function Hero() {
           <a href={`mailto:${contact.email}`} target="_blank" rel="noopener noreferrer">
             <MdEmail className="w-12 h-12 text-white" />
           </a>
-          <a href={contact.github} target="_blank" rel="noopener noreferrer">
+          <a href={`https://${contact.github}`} target="_blank" rel="noopener noreferrer">
             <FaGithub className="w-12 h-12 text-white" />
           </a>
-          <a href={contact.linkedin} target="_blank" rel="noopener noreferrer">
+          <a href={`https://${contact.linkedin}`} target="_blank" rel="noopener noreferrer">
             <FaLinkedin className="w-12 h-12 text-white" />
           </a>
         </div>

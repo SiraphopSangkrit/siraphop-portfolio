@@ -78,6 +78,7 @@ export default function Contact() {
                   <p className="font-medium text-gray-900 dark:text-white">Email</p>
                   <a 
                     href={`mailto:${content.email}`}
+                    
                     className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"
                   >
                     {content.email}
