@@ -2,6 +2,8 @@
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
 
+import { Button } from '@/components/animate-ui/components/buttons/button';
+
 interface Project {
   _id: string;
   title: string;
@@ -74,7 +76,7 @@ export default function Projects() {
 
   if (error) {
     return (
-      <section id="projects" className="py-20 px-4 bg-gray-50 dark:bg-gray-800">
+      <section id="projects" className="py-20 px-4 ">
         <div className="max-w-6xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
             Featured Projects
@@ -92,15 +94,13 @@ export default function Projects() {
   }
 
   return (
-    <section id="projects" className="py-20 px-4 bg-gray-50 dark:bg-gray-800">
+    <section id="projects" className="py-20 px-4 0">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4 underline underline-offset-4">
             Featured Projects
           </h2>
-          <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-            Here are some of the projects I &apos; ve worked on recently.
-          </p>
+          
         </div>
 
         {projects.length === 0 ? (
@@ -140,30 +140,37 @@ export default function Projects() {
                   </p>
                   <div className="flex flex-wrap gap-2 mb-4">
                     {project.technologies.map((tech) => (
-                      <span key={tech} className="px-2 py-1 bg-gray-100 dark:bg-gray-600 text-xs rounded">
+                      <span key={tech} className="px-2 py-1 bg-gray-100 dark:bg-gray-600 text-xs rounded text-white">
                         {tech}
                       </span>
                     ))}
                   </div>
-                  <div className="flex gap-3">
+                  <div className="flex gap-3 ">
                     {project.demoUrl && (
                       <a
                         href={project.demoUrl}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex-1 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg text-sm font-medium transition-colors text-center"
+                        className='shrink'
+                     
                       >
+                      <Button className=' px-8 py-6 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-medium transition-colors'>
                         Live Demo
+
+                        </Button>
                       </a>
                     )}
                     {project.codeUrl && (
                       <a
-                        href={project.codeUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex-1 px-4 py-2 border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-600 rounded-lg text-sm font-medium transition-colors text-center"
+                          href={project.codeUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className='w-full shrink '
+
                       >
+                      <Button className='px-8 py-6 w-full shrink border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800 rounded-lg font-medium transition-colors'>
                         Code
+                      </Button>
                       </a>
                     )}
                   </div>
@@ -173,6 +180,7 @@ export default function Projects() {
           </div>
         )}
       </div>
+    
     </section>
   );
 }

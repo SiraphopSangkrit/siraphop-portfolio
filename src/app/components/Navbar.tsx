@@ -27,23 +27,23 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="fixed top-0 w-full bg-white/90 dark:bg-gray-900/90 backdrop-blur-md shadow-md z-50 transition-all duration-300">
+    <nav className="w-full bg-transparent z-50 fixed top-0 ">
       <div className="max-w-6xl mx-auto px-4">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <div className="flex-shrink-0 text-xl font-bold text-gray-900 dark:text-white">
-            <button onClick={() => scrollToSection('#home')} className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+          <div className="shrink-0 text-2xl font-bold ">
+            <button onClick={() => scrollToSection('#home')} className="bg-linear-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
               Siraphop Sangkrit
             </button>
           </div>
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex items-center space-x-6">
+          <div className="hidden md:flex items-center space-x-6 ">
             {navItems.map((item) => (
               <button
                 key={item.name}
                 onClick={() => scrollToSection(item.href)}
-                className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+                className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors font-bold"
               >
                 {item.name}
               </button>

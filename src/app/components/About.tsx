@@ -1,6 +1,8 @@
 'use client';
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
+import { motion } from 'motion/react';
+import { BackgroundBeams } from '@/components/ui/background-beams';
 
 interface AboutContent {
   title?: string;
@@ -30,6 +32,7 @@ interface Experience {
 
   order: number;
 }
+
 
 export default function About() {
   const [content, setContent] = useState<AboutContent>({
@@ -123,7 +126,19 @@ export default function About() {
   }
 
   return (
-    <section id="about" className="py-20 px-4 bg-gray-50 dark:bg-gray-800">
+    <section id="about" className="py-20 px-4 relative">
+
+      <div>
+        <motion.div
+          className="absolute top-0 left-0 w-full h-full z-10"
+          initial={{ opacity: 0 }}
+          animate={{ rotate: 360, opacity: 1 }}
+          transition={{ duration: 1 }}
+        >
+    
+
+        </motion.div>
+      </div>
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
@@ -191,9 +206,6 @@ export default function About() {
                       <p className="text-gray-600 dark:text-gray-300 mb-4">
                         {exp.description}
                       </p>
-                      
-                      
-                     
                     </div>
                   </div>
                 </div>
