@@ -1,0 +1,344 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-09T13:59:49.407Z",
+  "title": "Design System: Personal Spotlight",
+  "extensions": {
+    "colorMeta": {
+      "action-blue": {
+        "role": "primary",
+        "displayName": "Action Blue",
+        "canonical": "oklch(54.6% 0.245 262.881)",
+        "tonalRamp": [
+          "oklch(37.9% 0.146 265.522)",
+          "oklch(42.4% 0.199 265.638)",
+          "oklch(48.8% 0.243 264.376)",
+          "oklch(54.6% 0.245 262.881)",
+          "oklch(62.3% 0.214 259.815)",
+          "oklch(70.7% 0.165 254.624)",
+          "oklch(88.2% 0.059 254.128)",
+          "oklch(97% 0.014 254.604)"
+        ]
+      },
+      "action-blue-hover": {
+        "role": "primary",
+        "displayName": "Action Blue Hover",
+        "canonical": "oklch(48.8% 0.243 264.376)",
+        "tonalRamp": [
+          "oklch(37.9% 0.146 265.522)",
+          "oklch(42.4% 0.199 265.638)",
+          "oklch(48.8% 0.243 264.376)",
+          "oklch(54.6% 0.245 262.881)",
+          "oklch(62.3% 0.214 259.815)",
+          "oklch(70.7% 0.165 254.624)",
+          "oklch(88.2% 0.059 254.128)",
+          "oklch(97% 0.014 254.604)"
+        ]
+      },
+      "link-blue": {
+        "role": "primary",
+        "displayName": "Link Blue",
+        "canonical": "oklch(70.7% 0.165 254.624)",
+        "tonalRamp": [
+          "oklch(37.9% 0.146 265.522)",
+          "oklch(42.4% 0.199 265.638)",
+          "oklch(48.8% 0.243 264.376)",
+          "oklch(54.6% 0.245 262.881)",
+          "oklch(62.3% 0.214 259.815)",
+          "oklch(70.7% 0.165 254.624)",
+          "oklch(88.2% 0.059 254.128)",
+          "oklch(97% 0.014 254.604)"
+        ]
+      },
+      "name-indigo": {
+        "role": "secondary",
+        "displayName": "Name Indigo",
+        "canonical": "oklch(58.5% 0.233 277.117)",
+        "tonalRamp": [
+          "oklch(35.9% 0.144 278.697)",
+          "oklch(39.8% 0.195 277.366)",
+          "oklch(45.7% 0.24 277.023)",
+          "oklch(51.1% 0.262 276.966)",
+          "oklch(58.5% 0.233 277.117)",
+          "oklch(67.3% 0.182 276.935)",
+          "oklch(87% 0.065 274.039)",
+          "oklch(96.2% 0.018 272.314)"
+        ]
+      },
+      "name-purple": {
+        "role": "secondary",
+        "displayName": "Name Purple",
+        "canonical": "oklch(62.7% 0.265 303.9)",
+        "tonalRamp": [
+          "oklch(38.1% 0.176 304.987)",
+          "oklch(43.8% 0.218 303.724)",
+          "oklch(49.6% 0.265 301.924)",
+          "oklch(55.8% 0.288 302.321)",
+          "oklch(62.7% 0.265 303.9)",
+          "oklch(71.4% 0.203 305.504)",
+          "oklch(90.2% 0.063 306.703)",
+          "oklch(97.7% 0.014 308.299)"
+        ]
+      },
+      "name-pink": {
+        "role": "secondary",
+        "displayName": "Name Pink",
+        "canonical": "oklch(65.6% 0.241 354.308)",
+        "tonalRamp": [
+          "oklch(40.8% 0.153 2.432)",
+          "oklch(45.9% 0.187 3.815)",
+          "oklch(52.5% 0.223 3.958)",
+          "oklch(59.2% 0.249 0.584)",
+          "oklch(65.6% 0.241 354.308)",
+          "oklch(71.8% 0.202 349.761)",
+          "oklch(89.9% 0.061 343.231)",
+          "oklch(97.1% 0.014 343.198)"
+        ]
+      },
+      "slate-top": {
+        "role": "neutral",
+        "displayName": "Slate Top",
+        "canonical": "oklch(37.2% 0.044 257.287)",
+        "tonalRamp": [
+          "oklch(20.8% 0.042 265.755)",
+          "oklch(27.9% 0.041 260.031)",
+          "oklch(37.2% 0.044 257.287)",
+          "oklch(44.6% 0.043 257.281)",
+          "oklch(55.4% 0.046 257.417)",
+          "oklch(70.4% 0.04 256.788)",
+          "oklch(92.9% 0.013 255.508)",
+          "oklch(98.4% 0.003 247.858)"
+        ]
+      },
+      "slate-bottom": {
+        "role": "neutral",
+        "displayName": "Slate Bottom",
+        "canonical": "oklch(20.8% 0.042 265.755)",
+        "tonalRamp": [
+          "oklch(20.8% 0.042 265.755)",
+          "oklch(27.9% 0.041 260.031)",
+          "oklch(37.2% 0.044 257.287)",
+          "oklch(44.6% 0.043 257.281)",
+          "oklch(55.4% 0.046 257.417)",
+          "oklch(70.4% 0.04 256.788)",
+          "oklch(92.9% 0.013 255.508)",
+          "oklch(98.4% 0.003 247.858)"
+        ]
+      },
+      "panel": {
+        "role": "neutral",
+        "displayName": "Panel",
+        "canonical": "oklch(27.8% 0.033 256.848)",
+        "tonalRamp": [
+          "oklch(21% 0.034 264.665)",
+          "oklch(27.8% 0.033 256.848)",
+          "oklch(37.3% 0.034 259.733)",
+          "oklch(44.6% 0.03 256.802)",
+          "oklch(55.1% 0.027 264.364)",
+          "oklch(70.7% 0.022 261.325)",
+          "oklch(92.8% 0.006 264.531)",
+          "oklch(98.5% 0.002 247.839)"
+        ]
+      },
+      "project-panel": {
+        "role": "neutral",
+        "displayName": "Project Panel",
+        "canonical": "oklch(37.3% 0.034 259.733)",
+        "tonalRamp": [
+          "oklch(21% 0.034 264.665)",
+          "oklch(27.8% 0.033 256.848)",
+          "oklch(37.3% 0.034 259.733)",
+          "oklch(44.6% 0.03 256.802)",
+          "oklch(55.1% 0.027 264.364)",
+          "oklch(70.7% 0.022 261.325)",
+          "oklch(92.8% 0.006 264.531)",
+          "oklch(98.5% 0.002 247.839)"
+        ]
+      },
+      "border": {
+        "role": "neutral",
+        "displayName": "Border",
+        "canonical": "oklch(44.6% 0.03 256.802)",
+        "tonalRamp": [
+          "oklch(21% 0.034 264.665)",
+          "oklch(27.8% 0.033 256.848)",
+          "oklch(37.3% 0.034 259.733)",
+          "oklch(44.6% 0.03 256.802)",
+          "oklch(55.1% 0.027 264.364)",
+          "oklch(70.7% 0.022 261.325)",
+          "oklch(92.8% 0.006 264.531)",
+          "oklch(98.5% 0.002 247.839)"
+        ]
+      },
+      "text-secondary": {
+        "role": "neutral",
+        "displayName": "Text Secondary",
+        "canonical": "oklch(87.2% 0.01 258.338)",
+        "tonalRamp": [
+          "oklch(21% 0.034 264.665)",
+          "oklch(27.8% 0.033 256.848)",
+          "oklch(37.3% 0.034 259.733)",
+          "oklch(44.6% 0.03 256.802)",
+          "oklch(55.1% 0.027 264.364)",
+          "oklch(70.7% 0.022 261.325)",
+          "oklch(92.8% 0.006 264.531)",
+          "oklch(98.5% 0.002 247.839)"
+        ]
+      },
+      "text-muted": {
+        "role": "neutral",
+        "displayName": "Text Muted",
+        "canonical": "oklch(70.7% 0.022 261.325)",
+        "tonalRamp": [
+          "oklch(21% 0.034 264.665)",
+          "oklch(27.8% 0.033 256.848)",
+          "oklch(37.3% 0.034 259.733)",
+          "oklch(44.6% 0.03 256.802)",
+          "oklch(55.1% 0.027 264.364)",
+          "oklch(70.7% 0.022 261.325)",
+          "oklch(92.8% 0.006 264.531)",
+          "oklch(98.5% 0.002 247.839)"
+        ]
+      },
+      "text-primary": {
+        "role": "neutral",
+        "displayName": "Text Primary",
+        "canonical": "#ffffff",
+        "tonalRamp": [
+          "oklch(21% 0.034 264.665)",
+          "oklch(27.8% 0.033 256.848)",
+          "oklch(37.3% 0.034 259.733)",
+          "oklch(44.6% 0.03 256.802)",
+          "oklch(55.1% 0.027 264.364)",
+          "oklch(70.7% 0.022 261.325)",
+          "oklch(92.8% 0.006 264.531)",
+          "oklch(98.5% 0.002 247.839)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "ชื่อหลักของเจ้าของพอร์ต"
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "หัวข้อส่วน"
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "หัวข้อการ์ด"
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "ข้อความทั่วไป"
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "ข้อความปุ่ม"
+      }
+    },
+    "shadows": [
+      {
+        "name": "card-large",
+        "value": "0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1)",
+        "purpose": "การ์ดผลงาน ทักษะ และประสบการณ์"
+      }
+    ],
+    "motion": [
+      {
+        "name": "button-hover-scale",
+        "value": "1.05",
+        "purpose": "สเกลปุ่ม Animate UI เมื่อชี้เมาส์"
+      },
+      {
+        "name": "button-tap-scale",
+        "value": "0.95",
+        "purpose": "สเกลปุ่ม Animate UI เมื่อกด"
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "sm",
+        "value": "640px"
+      },
+      {
+        "name": "md",
+        "value": "768px"
+      },
+      {
+        "name": "lg",
+        "value": "1024px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "ปุ่มหลักตามสีและระยะที่หน้าแนะนำตัวใช้",
+      "html": "<button class=\"ds-button-primary\">ดูผลงาน</button>",
+      "css": ".ds-button-primary{padding:24px 32px;border-radius:8px;font:500 14px/1.428571 var(--font-sans, sans-serif);cursor:pointer;transition:background-color .15s,transform .15s;border:0;background:var(--color-blue-600, oklch(54.6% 0.245 262.881));color:#fff}.ds-button-primary:hover{background:var(--color-blue-700, oklch(48.8% 0.243 264.376));transform:scale(1.05)}.ds-button-primary:active{transform:scale(.95)}.ds-button-primary:focus-visible{outline:auto}.ds-button-primary:disabled{opacity:.5;pointer-events:none}"
+    },
+    {
+      "name": "Secondary Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "ปุ่มรองมีเส้นขอบและข้อความสีอ่อน",
+      "html": "<button class=\"ds-button-secondary\">ติดต่อ</button>",
+      "css": ".ds-button-secondary{padding:24px 32px;border-radius:8px;font:500 14px/1.428571 var(--font-sans, sans-serif);cursor:pointer;transition:background-color .15s,transform .15s;border:1px solid var(--color-gray-600, oklch(44.6% 0.03 256.802));background:transparent;color:var(--color-gray-300, oklch(87.2% 0.01 258.338))}.ds-button-secondary:hover{background:var(--color-gray-800, oklch(27.8% 0.033 256.848));transform:scale(1.05)}.ds-button-secondary:active{transform:scale(.95)}.ds-button-secondary:focus-visible{outline:auto}.ds-button-secondary:disabled{opacity:.5;pointer-events:none}"
+    },
+    {
+      "name": "Content Input",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "ช่องกรอกตามฟอร์มแก้ไขเนื้อหาใน admin",
+      "html": "<label class=\"ds-field\">ข้อความ<input class=\"ds-input\" type=\"text\" value=\"Software Developer\"></label>",
+      "css": ".ds-field{display:grid;gap:8px;color:var(--color-gray-300, oklch(87.2% 0.01 258.338));font:400 14px/1.5 var(--font-sans, sans-serif)}.ds-input{padding:12px;border:1px solid var(--color-gray-600, oklch(44.6% 0.03 256.802));border-radius:8px;background:var(--color-gray-700, oklch(37.3% 0.034 259.733));color:#fff;font:400 16px/1.5 var(--font-sans, sans-serif)}.ds-input:focus{border-color:var(--color-blue-500);box-shadow:0 0 0 2px var(--color-blue-500)}"
+    },
+    {
+      "name": "Portfolio Navigation",
+      "kind": "nav",
+      "description": "ชื่อเจ้าของและเมนูตามแถบนำทางปัจจุบัน",
+      "html": "<nav class=\"ds-nav\" aria-label=\"ตัวอย่างเมนู\"><button class=\"ds-nav-name\">Siraphop Sangkrit</button><div class=\"ds-nav-links\"><button>เกี่ยวกับผม</button><button>ผลงาน</button><button>ติดต่อ</button></div></nav>",
+      "css": ".ds-nav{display:flex;align-items:center;justify-content:space-between;gap:24px;min-height:64px;font-family:var(--font-sans, sans-serif)}.ds-nav button{background:transparent;border:0;cursor:pointer;font-family:inherit}.ds-nav-name{font-size:24px;font-weight:700;background-image:linear-gradient(to right,var(--color-indigo-500),var(--color-purple-500),var(--color-pink-500))!important;background-clip:text!important;color:transparent}.ds-nav-links{display:flex;flex-wrap:wrap;gap:24px}.ds-nav-links button{color:var(--color-gray-300, oklch(87.2% 0.01 258.338));font-size:16px;font-weight:700;transition:color .15s}.ds-nav-links button:hover{color:var(--color-blue-400, oklch(70.7% 0.165 254.624))}.ds-nav button:focus-visible{outline:auto}@media(max-width:767px){.ds-nav{flex-wrap:wrap}.ds-nav-links{width:100%}}"
+    },
+    {
+      "name": "Technology Tag",
+      "kind": "chip",
+      "description": "แท็กข้อมูลเทคโนโลยีจากการ์ดผลงาน",
+      "html": "<span class=\"ds-tech-tag\">TypeScript</span>",
+      "css": ".ds-tech-tag{display:inline-block;padding:4px 8px;border-radius:4px;background:var(--color-gray-600, oklch(44.6% 0.03 256.802));color:#fff;font:400 12px/1.333333 var(--font-sans, sans-serif)}"
+    },
+    {
+      "name": "Project Card",
+      "kind": "card",
+      "refersTo": "project-card",
+      "description": "ตัวอย่างโครงสร้างการ์ดผลงาน เนื้อหานี้เป็นตัวอย่างสำหรับแผง Live",
+      "html": "<article class=\"ds-project-card\"><div class=\"ds-project-image\" aria-hidden=\"true\">P</div><div class=\"ds-project-content\"><h3>ชื่อผลงาน</h3><p>คำอธิบายผลงาน</p><span class=\"ds-project-tag\">TypeScript</span></div></article>",
+      "css": ".ds-project-card{max-width:360px;overflow:hidden;border-radius:8px;background:var(--color-gray-700, oklch(37.3% 0.034 259.733));color:#fff;font-family:var(--font-sans, sans-serif);box-shadow:0 10px 15px -3px rgb(0 0 0/.1),0 4px 6px -4px rgb(0 0 0/.1)}.ds-project-image{height:192px;display:flex;align-items:center;justify-content:center;background:linear-gradient(to bottom right,var(--color-blue-400),var(--color-purple-500));font-size:24px;font-weight:700}.ds-project-content{padding:24px}.ds-project-content h3{margin:0 0 8px;font-size:20px;line-height:1.4;font-weight:700}.ds-project-content p{margin:0 0 16px;color:var(--color-gray-300, oklch(87.2% 0.01 258.338));font-size:14px;line-height:1.428571}.ds-project-tag{display:inline-block;padding:4px 8px;border-radius:4px;background:var(--color-gray-600, oklch(44.6% 0.03 256.802));font-size:12px;line-height:1.333333}"
+    }
+  ],
+  "narrative": {
+    "northStar": "Personal Spotlight",
+    "overview": "แนวคิดที่เจ้าของเลือกคือการให้ตัวตนและผลงานเป็นจุดสนใจ เอกสารนี้บันทึกระบบภาพจากโค้ดปัจจุบัน เพื่อใช้เป็นฐานของการปรับแต่งและ Live ไม่ได้อนุมัติการออกแบบใหม่ทั้งเว็บไซต์\n\nระบบปัจจุบันใช้พื้นหลังสีเข้ม ตัวอักษรสว่าง ปุ่มน้ำเงิน และชื่อที่ไล่สีคราม ม่วง และชมพู กลุ่มเนื้อหาอยู่ในกรอบกว้างคงที่และแบ่งเป็นส่วนแนวตั้ง มีการ์ดขอบมนสำหรับผลงาน ทักษะ และประสบการณ์ ลักษณะเหล่านี้เป็นข้อสังเกตจาก implementation ไม่ใช่ข้อกำหนดใหม่ที่เจ้าของต้องรักษาตลอดไป",
+    "keyCharacteristics": [
+      "ตัวตนและผลงานเป็นจุดสนใจ",
+      "พื้นหลังเข้มและข้อความสว่าง",
+      "น้ำเงินสำหรับการกระทำและลิงก์",
+      "กลุ่มเนื้อหาที่มีระยะห่างชัดเจนและการ์ดขอบมน"
+    ],
+    "rules": [],
+    "dos": [
+      "**Do** ใช้สี ระยะ และส่วนประกอบที่มีอยู่เป็นฐานเมื่อปรับแต่งแบบรักษาเอกลักษณ์เดิม",
+      "**Do** ใช้ชื่อแนวคิด Personal Spotlight ตามที่เจ้าของเลือก",
+      "**Do** รองรับข้อความไทยเป็นหลักและอังกฤษเป็นรองตาม PRODUCT.md โดยตรวจการตัดบรรทัดด้วยเนื้อหาจริง"
+    ],
+    "donts": [
+      "**Don't** ถือว่าชื่อแนวคิดนี้อนุมัติการเปลี่ยนดีไซน์ทั้งเว็บไซต์",
+      "**Don't** อ้างว่าฟอนต์ที่โหลดถูกใช้จริง หรือว่าผ่านการตรวจ accessibility แล้ว โดยยังไม่มีหลักฐานจากการแสดงผล",
+      "**Don't** เพิ่มข้อกำหนดสี ฟอนต์ เอฟเฟกต์ หรือคำอธิบายบุคลิกแบรนด์ที่เจ้าของยังไม่ได้กำหนด",
+      ""
+    ]
+  }
+}

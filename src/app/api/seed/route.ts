@@ -3,7 +3,7 @@ import { NextResponse } from 'next/server';
 import connectDB from '@/lib/mongodb';
 import Content from '@/lib/models/Content';
 import Project from '@/lib/models/Project';
-import Skill from '@/lib/models/Skill';
+import Skill, { type ISkill } from '@/lib/models/Skill';
 import Experience from '@/lib/models/Experience';
 
 const initialContent = [
@@ -58,41 +58,41 @@ const initialProjects = [
   }
 ];
 
-const initialSkills = [
+const initialSkills: Pick<ISkill, 'name' | 'category' | 'level' | 'order'>[] = [
   // Frontend Skills
-  { name: 'React', category: 'frontend', order: 1 },
-  { name: 'Next.js', category: 'frontend',  order: 2 },
-  { name: 'Vue.js', category: 'frontend', order: 3 },
-  { name: 'TypeScript', category: 'frontend', order: 4 },
-  { name: 'JavaScript', category: 'frontend' ,order: 5 },
-  { name: 'HTML5', category: 'frontend', order: 6 },
-  { name: 'CSS3', category: 'frontend',order: 7 },
-  { name: 'Tailwind CSS', category: 'frontend' ,order: 8 },
-  { name: 'Sass/SCSS', category: 'frontend',order: 9 },
+  { name: 'React', category: 'frontend', level: 5, order: 1 },
+  { name: 'Next.js', category: 'frontend', level: 5, order: 2 },
+  { name: 'Vue.js', category: 'frontend', level: 5, order: 3 },
+  { name: 'TypeScript', category: 'frontend', level: 5, order: 4 },
+  { name: 'JavaScript', category: 'frontend', level: 5, order: 5 },
+  { name: 'HTML5', category: 'frontend', level: 5, order: 6 },
+  { name: 'CSS3', category: 'frontend', level: 5, order: 7 },
+  { name: 'Tailwind CSS', category: 'frontend', level: 5, order: 8 },
+  { name: 'Sass/SCSS', category: 'frontend', level: 5, order: 9 },
   
   // Backend Skills
-  { name: 'Node.js', category: 'backend', order: 1 },
-  { name: 'Express.js', category: 'backend', order: 2 },
-  { name: 'PHP', category: 'backend', order: 3 },
-  { name: 'Laravel', category: 'backend', order: 4 },
-  { name: 'Python', category: 'backend', order: 5 },
-  { name: 'MongoDB', category: 'backend', order: 6 },
-  { name: 'PostgreSQL', category: 'backend', order: 7 },
-  { name: 'MySQL', category: 'backend', order: 8 },
-  { name: 'Redis', category: 'backend', order: 9 },
+  { name: 'Node.js', category: 'backend', level: 5, order: 1 },
+  { name: 'Express.js', category: 'backend', level: 5, order: 2 },
+  { name: 'PHP', category: 'backend', level: 5, order: 3 },
+  { name: 'Laravel', category: 'backend', level: 5, order: 4 },
+  { name: 'Python', category: 'backend', level: 5, order: 5 },
+  { name: 'MongoDB', category: 'backend', level: 5, order: 6 },
+  { name: 'PostgreSQL', category: 'backend', level: 5, order: 7 },
+  { name: 'MySQL', category: 'backend', level: 5, order: 8 },
+  { name: 'Redis', category: 'backend', level: 5, order: 9 },
   
   // Tools & DevOps
-  { name: 'Git', category: 'tools', order: 1 },
-  { name: 'GitHub', category: 'tools', order: 2 },
-  { name: 'VS Code', category: 'tools',  order: 3 },
-  { name: 'Docker', category: 'tools', order: 4 },
-  { name: 'AWS', category: 'tools', order: 5 },
-  { name: 'Vercel', category: 'tools', order: 6 },
-  { name: 'Netlify', category: 'tools', order: 7 },
-  { name: 'Figma', category: 'tools', order: 8 },
-  { name: 'Postman', category: 'tools', order: 9 },
-  { name: 'Jest', category: 'tools', order: 10 },
-  { name: 'Webpack', category: 'tools', order: 11 }
+  { name: 'Git', category: 'tools', level: 5, order: 1 },
+  { name: 'GitHub', category: 'tools', level: 5, order: 2 },
+  { name: 'VS Code', category: 'tools', level: 5, order: 3 },
+  { name: 'Docker', category: 'tools', level: 5, order: 4 },
+  { name: 'AWS', category: 'tools', level: 5, order: 5 },
+  { name: 'Vercel', category: 'tools', level: 5, order: 6 },
+  { name: 'Netlify', category: 'tools', level: 5, order: 7 },
+  { name: 'Figma', category: 'tools', level: 5, order: 8 },
+  { name: 'Postman', category: 'tools', level: 5, order: 9 },
+  { name: 'Jest', category: 'tools', level: 5, order: 10 },
+  { name: 'Webpack', category: 'tools', level: 5, order: 11 }
 ];
 
 const initialExperiences = [

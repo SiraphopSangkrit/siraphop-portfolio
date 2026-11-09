@@ -1,0 +1,11 @@
+{
+ "page": null,
+ "url": "http://localhost:3000/",
+ "root": null,
+ "kind": "service",
+ "category": "Software Developer portfolio",
+ "primary": "ติดต่อ",
+ "rounds": 3,
+ "start": "2026-11-09T14:28:18.226Z",
+ "by": "gate.mjs --start"
+}

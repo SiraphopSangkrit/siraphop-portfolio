@@ -106,10 +106,7 @@ export default function Projects() {
         {projects.length === 0 ? (
           <div className="text-center py-12">
             <p className="text-gray-600 dark:text-gray-300 mb-4">No projects found.</p>
-            <p className="text-sm text-gray-500 dark:text-gray-400">
-              Visit the <a href="/admin" className="text-blue-600 hover:underline">admin panel</a> to add projects, 
-              or <a href="/test-seed" className="text-blue-600 hover:underline">seed the database</a> with sample data.
-            </p>
+         
           </div>
         ) : (
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
